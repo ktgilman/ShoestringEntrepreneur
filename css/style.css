@@ -1,0 +1,349 @@
+/**************************************
+
+General
+
+****************************************/
+
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+/*End Fonts*/
+
+a:visited, a:link{
+	color:inherit;
+	text-decoration: none;
+}
+
+body{
+	font-size: 1em;
+	font-family: 'Open Sans',sans-serif;
+}
+
+
+
+/********************************
+
+Head
+
+***********************************/
+
+
+header{
+	background-size: cover;
+}
+
+h1, h2{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 3em;
+	padding: 20% 0 1%;
+	
+}
+
+h2{
+	font-size: 2em;
+	line-height: 1em;
+	padding: 1% 0 25%;
+	
+}
+
+/*****************************
+
+Navigation (Will always be at the top of the screen no matter where it is scrolled to.  It will only be visible when user hovers over div. It will also be visible if scroll is at the top of the page)
+
+*****************************/
+
+#hoveringbar{
+	font-weight: bold;
+}
+
+#analyzer{
+	font-style: italic;
+	margin: 1% 0 1% 1%;
+	padding: 0;
+	float:left;
+	width: 50%;
+}
+
+#analyzertop{
+	margin: 0;
+	padding: 0;
+}
+
+#analyzerbottom{
+	margin: 0;
+	padding: 0;
+}
+
+#trnav{
+	list-style: none;
+	float: right;
+	width: 40%;
+	margin: 1% 1% 0 0;
+	padding: 0;
+}
+
+.topnav{
+	float: right;
+	margin: 2% 2% 2% 0;
+	padding: 0 2% 0 0;
+}
+
+#signup{
+	border-right: none;
+}
+
+
+/***************************
+
+Content
+
+***************************/
+
+#left{
+	padding: 0 2.5%;
+	margin: 0;
+}
+
+#right{
+	padding: 0 2.5%;
+	margin: 0;
+}
+
+.bullet{
+	margin: 0;
+	padding: 2% 0 2%;
+	
+}
+
+h3, h4{
+	text-align: center;
+	padding: 3%;
+	border-radius: 20% 20% 0% 0%;
+	
+}
+
+h3{
+	font-size: 2.5em;
+}
+
+h4{
+	font-size: 2em;
+}
+
+.pretext, .sidetext{
+	font-size: 1.5em;
+	text-align: center;
+	max-width: 960px;
+	padding: 1%;
+	margin: 0;
+	border-radius: 0 0 20% 20%;
+}
+
+.dropdown{
+	display: none;
+}
+
+.secondlevel{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.secondlevel li:nth-child(3n+1) {
+	clear: both;
+}
+
+h5{
+	float: left;
+	width: 33.333%;
+	padding: 5%;
+	margin: 2% 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: solid;
+	border-radius: 75% 0;
+	
+}
+
+
+
+.secondlevel p{
+	display: none;
+}
+
+.open{
+	clear: both;
+	font-weight: bold;
+	display: block;
+	padding: 3%;
+}
+
+.arrow{
+	display: block;
+	margin: 1% auto 1%;
+	padding: 0;
+	width: 5%;
+}
+
+#bbwrap{
+	text-align: center;
+}
+
+#bottombutton{
+	display: inline-block;
+	margin: 5% auto 3%;
+	padding: 10%;
+	border-radius: 50%;
+	font-size: 1.5em;
+	font-weight: bold;
+	
+}
+
+/*************************
+
+Footer
+
+**************************/
+
+nav ul{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	padding: 2% 2% 2% 0;
+	font-weight: bold;
+}
+
+
+
+/*****************************
+
+Colors
+
+***************************/
+
+body{
+	color: #99B2B7;
+}
+
+a:hover{
+	color: #D5DED9;
+}
+
+header{
+	background-image: linear-gradient(#99B2B7,transparent 40%),
+			linear-gradient(0deg, #FFF, transparent 80%),
+			url(../img/emptychairs.jpg);
+}
+
+h1, h2{
+	color: #D5DED9;
+	text-shadow: .5px .5px .5px rgba(153,178,183,.9),
+		1px 1px 1px rgba(153,178,183,.8),
+		1.5px 1.5px 1.5px rgba(153,178,183,.7),
+		2px 2px 2px rgba(153,178,183,.6),
+		2.5px 2.5px 2.5px rgba(153,178,183,.5);
+}
+
+h1{
+	background-image: linear-gradient(0deg,rgba(0,0,0,.5),transparent 40%);
+}
+
+h2{
+	background-image: linear-gradient(rgba(0,0,0,.5),transparent 80%);
+}
+
+/*Navigation*/
+
+	/*Left Navigation*/
+	
+.loudanalyzer{
+	background-image: linear-gradient(90deg, rgba(153,178,183,.8),transparent 100%);
+	color: white;
+}
+
+.softanalyzer{
+	background-image: linear-gradient(90deg, rgba(153,178,183,.1),transparent 100%);
+	color: rgba(256,256,256,.25);
+}
+
+.hovercolor{
+	color: #D5DED9;
+}
+
+	/*Right Navigation*/
+
+.loudtrnav{
+	background-image: linear-gradient(90deg, transparent, rgba(153,178,183,.8));
+	color: white;
+}
+
+.softtrnav{
+	background-image: linear-gradient(90deg, transparent, rgba(153,178,183,.1));
+	color: rgba(256,256,256,.5);
+}
+
+.selcolor{
+	color: #D5DED9;
+}
+
+.topnav:hover{
+	color: #D5DED9;
+}
+
+/*start main content*/
+
+h3{
+	background-color: rgba(153,178,183,.1);
+	color: #D5DED9;
+	text-shadow: .5px .5px .5px rgb(153,178,183),
+		1px 1px 1px rgba(153,178,183,.9),
+		1.5px 1.5px 1.5px rgba(153,178,183,.8),
+		2px 2px 2px rgba(153,178,183,.7);
+	box-shadow: 0 5px 5px #99B2B7;
+}
+
+.pretext{
+	background-image: linear-gradient(transparent 20%, rgba(153,178,183,.2));
+	box-shadow: 0 5px 5px #99B2B7;
+}
+
+h4{
+	background-color: rgba(122,106,83,.1);
+	color: #D9CEB2;
+	text-shadow: .5px .5px .5px rgb(122,106,83),
+		1px 1px 1px rgba(122,106,83,.9),
+		1.5px 1.5px 1.5px rgba(122,106,83,.8),
+		2px 2px 2px rgba(122,106,83,.7);
+	box-shadow: 0 5px 5px #7A6A53;
+}
+
+.sidetext{
+	background-image: linear-gradient(transparent 20%, rgba(122,106,83,.2));
+	box-shadow: 0 5px 5px #7A6A53;
+	color: #7A6A53;
+}
+
+
+
+
+/**************************
+To use:
+Lightest Brown - #D9CEB2 / 217,206,178
+Middle Brown - #948C75 / 148,140,117
+Light Blue/Gray - #D5DED9 / 213,222,217
+Brown - #7A6A53 / 122,106,83
+Blue/Gray - #99B2B7 / 153,178,183
+
+*************************/

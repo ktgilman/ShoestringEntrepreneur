@@ -1,0 +1,17 @@
+@media all and (min-width: 700px){
+    #left{
+        float: left;
+        width: 70%;
+        padding: 0 1% 0 2.5%;
+    }
+    
+    #right{
+        float: right;
+        width: 30%;
+        padding: 2% 1% 0 2.5%;
+    }
+    
+    footer{
+        clear: both;
+    }
+}
