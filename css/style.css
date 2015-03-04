@@ -139,7 +139,6 @@ h4{
 .pretext, .sidetext{
 	font-size: 1.5em;
 	text-align: center;
-	max-width: 960px;
 	padding: 1%;
 	margin: 0;
 	border-radius: 0 0 20% 20%;
@@ -159,23 +158,60 @@ h4{
 	clear: both;
 }
 
-h5{
+button{
 	float: left;
-	width: 33.333%;
-	padding: 5%;
-	margin: 2% 0;
-	font-size: 1.5em;
+	width: 30%;
+	padding: 5% 2% 2% 1%;
+	margin: 2% 1%;
+	font-size: 1.25em;
 	font-weight: bold;
 	border: solid;
-	border-radius: 75% 0;
-	
+	border-radius: 75% 10% 10% 10%;	
 }
 
+button:focus{
+	outline:0;
+}
 
+/*
+Popout Styling
+*/
+
+#popout{
+	position:fixed;
+	left:0;
+	top:0;
+	width: 50%;
+	margin: 10% 25%;
+	text-align: center;
+	border-radius: 10%;
+}
+
+#popout p{
+	font-size: 1.5em;
+	padding: 0 5% 1%;
+	overflow: auto;
+}
+
+h5{
+	padding: 3% 0 1%;
+	font-size: 2em;
+}
+
+#buttonclose{
+	width: 20%;
+	margin: 0 40% 5%;
+	padding: 1%;
+	border-radius: 10%;
+}
 
 .secondlevel p{
 	display: none;
 }
+
+/*
+End Popout Styling
+*/
 
 .open{
 	clear: both;
@@ -335,7 +371,14 @@ h4{
 	color: #7A6A53;
 }
 
+button:hover{
+	background-color:transparent;
+}
 
+#popout{
+	background-color: rgba(153,178,183,.9);
+	color: white;
+}
 
 
 /**************************
