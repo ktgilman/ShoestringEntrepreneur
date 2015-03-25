@@ -172,12 +172,53 @@
 		<div class="bullet">
 		    <h3 id="competitive">We Will Be the Best Option</h3>    
 		    <div id="competition" class="pretext">
-			<p>We are better than competition</p>
-			<p>Table</p>
+			<p>We understand there are many options for you to choose from in the marketplace. It may even seem to you as though everyone around you is wanting to help your business. The Shoestring Entrepreneur will deliver a compliment of services that is unparalleled and get you to your goals.</p>
+			<p>If you would like to see how our services stack up against others, take a look at our comparison. Of course it is not at all encompassing but serves as a glimpse of the many features we can provide to you.</p>
 			<div class="dropdown">
-			    <ul>
-				<li>Test</li>
-			    </ul>
+			    <p>Select which options you would like to compare:</p>
+			    <form id="checkforcomps">
+				<input type="checkbox" id="onyourown" value="1">
+				<label for="onyourown">Do It Yourself</label>
+				<input type="checkbox" id="webdesigner" value="2">
+				<label for="webdesigner">Web Designers</label>
+				<input type="checkbox" id="marketingfirm" value="3">
+				<label for="marketingfirm">Marketing Firms</label>
+				<button id="showcompetition">See Competition</button>
+			    </form>
+			    <div id="tablematchup">
+				<table id="matchup">
+				    <tr>
+					<th>Benefit</th>
+					<th>Shoestring Entrepreneur</th>
+					<th>Do It Yourself</th>
+					<th>Web Designers</th>
+					<th>Marketing Firms</th>
+				    </tr>
+				    <tr>
+					<th>First Benefit</th>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>No</td>
+					<td>No</td>
+				    </tr>
+				    <tr>
+					<th>Second Benefit</th>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>No</td>
+					<td>No</td>
+				    </tr>
+				    <tr>
+					<th>Third Benefit</th>
+					<td>Yes</td>
+					<td>No</td>
+					<td>No</td>
+					<td>No</td>
+				    </tr>
+				</table>
+				<button id="tablebutton">Close Table</button>
+			    </div>
+			    
 			</div>
 		    <a href="#competitive" id="competitionlink" class="open">See More<img id="competitionimg" class="arrow" src="img/arrow.png" alt="See More"></a>
 		    </div>
@@ -304,5 +345,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/hbar.js"></script>
 	<script src="js/display.js"></script>
+	<script src="js/table.js"></script>
     </body>
 </html>
